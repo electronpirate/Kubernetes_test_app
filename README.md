@@ -4,10 +4,28 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### `nps dev`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
+
+-nps is set up to open localhost when the above command is executed in terminal. Set up details in package-scripts.js file.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `nps prod.start`
+
+Runs the app in the "production" mode.<br />
+Open [http://localhost:80](http://localhost:80) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `nps kube`
+
+Runs the app on kubernetes cluster.<br />
+Open [http://localhost:30001](http://localhost:30001) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
