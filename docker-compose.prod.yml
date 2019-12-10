@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  prod-frontend:
+    container_name: test_container_prod
+    build:
+      context: .
+      dockerfile: docker-prod.Dockerfile
+    ports:
+      - "80:80"
