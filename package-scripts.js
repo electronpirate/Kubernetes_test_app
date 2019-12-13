@@ -35,9 +35,9 @@ module.exports = {
       //build and image from Dockerfile firs
       build: "docker build -t test-prod -f docker-prod.Dockerfile .",
       //spin up kubernetes deployment
-      run: "kubectl apply -f kube.yaml",
+      run: "kubectl apply -f kubernetes-compose.yaml",
 
-      stop: "kubectl delete -f kube.yaml"
+      stop: "kubectl delete -f kubernetes-compose.yaml"
     }
   }
 };
