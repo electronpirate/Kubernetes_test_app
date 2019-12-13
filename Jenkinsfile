@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Build the app') {
             steps {
-                sh 'nps kube.start'
+                sh 'nps kube'
             }
         }
         stage('Clean up') {
