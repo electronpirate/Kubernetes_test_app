@@ -1,9 +1,7 @@
 pipeline {
     agent any
     //triggers
-    triggers {
-        pollSCM('* * * * *')
-    }
+    
 
     stages {
         stage('Prepare the flow') {
@@ -14,6 +12,11 @@ pipeline {
         stage('Build the app') {
             steps {
                 sh 'nps kube.start'
+            }
+        }
+        stage('Clean up') {
+            steps {
+                echo 'Cleaning up...'
             }
         }
     }
