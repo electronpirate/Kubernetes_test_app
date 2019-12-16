@@ -1,7 +1,5 @@
 pipeline {
     agent any
-    //triggers
-    
 
     stages {
         stage('Prepare the flow') {
