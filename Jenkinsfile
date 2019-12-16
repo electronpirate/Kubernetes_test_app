@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build the app') {
             steps {
-                sh 'nps kube'
+                echo 'Building the app...'
             }
         }
         stage('Clean up') {
