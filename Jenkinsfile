@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    //test comment 1
+    //test comment 1 2
 
     stages {
         stage('Prepare the flow') {
