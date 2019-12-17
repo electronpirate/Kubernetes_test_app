@@ -1,6 +1,9 @@
 pipeline {
     agent any
     //test comment 1 2 3 4
+    triggers {
+    pollSCM('') // Enabling being build on Push
+  }
 
     stages {
         stage('Prepare the flow') {
